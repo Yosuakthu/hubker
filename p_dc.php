@@ -71,10 +71,10 @@
 ?>
 <script>
   	
-    $(document).ready( function () {
-    $('#p_dc').DataTable({
-    responsive: true
-});
-} );
-	
+//     $(document).ready( function () {
+//     $('#p_dc').DataTable({
+//     responsive: true
+// });
+// } );
+let table = new DataTable('#p_dc');
               </script>

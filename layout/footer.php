@@ -35,6 +35,8 @@
     <!-- datatable -->
     <script src="DataTables/datatables.min.js"></script>
     <script src="DataTables/Responsive-2.5.0/js/dataTables.responsive.min.js"></script>
+    <script src="include//code.jquery.com_jquery-3.5.1.js"></script>
+    <script src="include/jquery.dataTables.min.js"></script>
 
     <!-- Page JS -->
     <script src="assets/js/dashboards-analytics.js"></script>

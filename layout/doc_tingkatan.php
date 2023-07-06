@@ -1,11 +1,11 @@
 <?php
-  $getIN = mysqli_query($conn,"SELECT * FROM Document WHERE id_tingkatan = 1 AND id_respon = 3");
+  $getIN = mysqli_query($conn,"SELECT * FROM Document WHERE id_tingkatan = 1 ");
   $setIN = mysqli_num_rows($getIN);
 
-  $getNa = mysqli_query($conn,"SELECT * FROM Document WHERE id_tingkatan = 2 AND id_respon = 3");
+  $getNa = mysqli_query($conn,"SELECT * FROM Document WHERE id_tingkatan = 2 ");
   $setNa = mysqli_num_rows($getNa);
 
-  $getLo = mysqli_query($conn,"SELECT * FROM Document WHERE id_tingkatan = 3 AND id_respon = 3");
+  $getLo = mysqli_query($conn,"SELECT * FROM Document WHERE id_tingkatan = 3");
   $setLo = mysqli_num_rows($getLo);
 ?>
 <div class="col-lg-8 col-md-7 order-1">

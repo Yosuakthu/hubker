@@ -11,7 +11,7 @@
         <?php
           $doc = query("SELECT * FROM document 
           INNER JOIN tingkatan ON document.id_tingkatan = tingkatan.id_tingkatan 
-          INNER JOIN respon ON document.id_respon = respon.id_respon WHERE document.id_tingkatan = 2 AND document.id_respon = 3");
+          INNER JOIN respon ON document.id_respon = respon.id_respon WHERE document.id_tingkatan = 2");
         ?>
         
 

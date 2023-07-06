@@ -22,7 +22,7 @@
         
           $doc = query("SELECT * FROM document 
           INNER JOIN tingkatan ON document.id_tingkatan = tingkatan.id_tingkatan 
-          INNER JOIN respon ON document.id_respon = respon.id_respon WHERE document.id_respon = 3 ");
+          INNER JOIN respon ON document.id_respon = respon.id_respon");
           $_SESSION["awal"] = $doc[0]["periodik_k"];
           $_SESSION["akhir"] = $doc[0]["a_periodik"];
 
@@ -42,7 +42,7 @@
                         <div class="card-body">
                           <h5 class="card-title text-primary">Hallo <?= $_SESSION["nama"]; ?>!</h5>
                           <p class="mb-4">
-                              Selamat Datang Terima Kasih Telah Mengunjungi Website <span>Sistem Informasi Manajemen Kerja Sama Pada Politeknik Negeri Nusa Utara</span> 
+                               Terima Kasih Telah Mengunjungi Website <span>Sistem Informasi Manajemen Kerja Sama Pada Politeknik Negeri Nusa Utara</span> 
                           </p>
                         </div>
                       </div>

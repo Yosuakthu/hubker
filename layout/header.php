@@ -32,6 +32,8 @@
     <!-- daatatabel -->
     <link href="DataTables/datatables.min.css" rel="stylesheet"/>
     <link href="DataTables/Responsive-2.5.0/css/responsive.dataTables.min.css" rel="stylesheet"/>
+    <link href="include/cdn.datatables.net_1.13.5_css_jquery.dataTables.min.css" rel="stylesheet"/>
+    
 
     <!-- Icons. Uncomment required icon fonts -->
     <link rel="stylesheet" href="assets/vendor/fonts/boxicons.css" />

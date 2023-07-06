@@ -41,14 +41,14 @@
                 <div data-i18n="Basic">Document Kerjasama</div>
               </a>
             </li>
-            <?php if ($_SESSION["id_level"] == 1) : ?>
-             <li class="menu-item">
+           
+             <!-- <li class="menu-item">
               <a href="p_dc.php" class="menu-link">
                 <i class="menu-icon tf-icons bx bxs-file-doc"></i>
                 <div data-i18n="Basic">Permintaan Kerjasama</div>
               </a>
-            </li>
-            <?php endif ?> 
+            </li> -->
+         
              <li class="menu-item">
               <a href="tamba_dc.php" class="menu-link">
                 <i class="menu-icon tf-icons bx bxs-file-doc"></i>

@@ -12,7 +12,7 @@
         <?php
           $doc = query("SELECT * FROM document 
           INNER JOIN tingkatan ON document.id_tingkatan = tingkatan.id_tingkatan 
-          INNER JOIN respon ON document.id_respon = respon.id_respon WHERE document.id_respon = 3");
+          INNER JOIN respon ON document.id_respon = respon.id_respon");
         ?>
 
  <!-- Basic Bootstrap Table -->
@@ -45,6 +45,10 @@
                         <td>
                           <form method="post">
                             <a href="lihat.php?id=<?= $d["no_kerjasama"]; ?>" type="submit" name="lihat" class="btn btn-primary" ><i class='bx bxs-report'></i></a>
+                            <?php if ($_SESSION["id_level"] == 1) : ?>
+                            <a href="edit.php?id=<?= $d["no_kerjasama"]; ?>" type="submit" name="edit" class="btn btn-warning" ><i class='bx bx-pencil'></i></a>
+                            <a href="hapus.php?id=<?= $d["no_kerjasama"]; ?>" type="button" name="hapus" class="btn btn-danger" onclick="return confirm('Andah Yakin Ingin Menghapus Data');"><i class='bx bx-trash'></i></a>
+                            <?php endif ?>
                           </form>
                         </td>
                       </tr>

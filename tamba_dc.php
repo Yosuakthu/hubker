@@ -122,14 +122,14 @@
       echo "
       <script>
           alert('Data Berhasil Ditambah ')
-          document.location.href = 'p_dc.php';
+          document.location.href = 'dc.php';
       </script>
       ";
     }else {
       echo "
       <script>
           alert('Data Gagal Ditambah ')
-          document.location.href = 'p_dc.php';
+          document.location.href = 'dc.php';
       </script>
       ";
     }
