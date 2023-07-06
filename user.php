@@ -21,8 +21,8 @@
     <?php endif ?>
  <div class="card">
                 <h5 class="card-header">Table Basic</h5>
-                <div class="table-responsive text-nowrap">
-                  <table class="table">
+                <div class="container mb-3">
+                  <table class="display" id="user">
                     <thead>
                       <tr>
                         <th>NIP</th>
@@ -32,8 +32,8 @@
                         <th>Actions</th>
                       </tr>
                     </thead>
-                    <?php foreach ($doc as $d) : ?>
                     <tbody class="table-border-bottom-0">
+                      <?php foreach ($doc as $d) : ?>
                     <td><?= $d["nip"]; ?></td>
                       <td><?= $d["nama"]; ?></td>
                       <td><?= $d["username"]; ?></td>
@@ -45,8 +45,8 @@
                       </td>
                       <?php endif ?>
                       </tr>
+                      <?php endforeach ?>
                     </tbody>
-                    <?php endforeach ?>
                   </table>
                 </div>
               </div>
@@ -54,3 +54,10 @@
 
               </div>
               <?php include_once("layout/footer.php") ?>
+              <script>
+  	
+    let table = new DataTable('#user',{
+    responsive: true
+});
+	
+              </script>
